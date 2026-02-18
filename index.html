@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Creator Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Portfolio</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <h1 class="hero-title">Content Creator & <span class="gradient-text">Designer</span></h1>
+      <p class="hero-description">
+        Dynamic entrepreneur and AI content creation specialist with expertise in digital marketing, business
+        management, and academic writing.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#gallery" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">Get to know me better</p>
+
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Who Am I?</h3>
+          <p>
+            I'm an AI Content Creator, Entrepreneur, and Digital Marketing Specialist with a strong foundation in
+            Computer Science and Engineering (AI & Machine Learning).
+          </p>
+          <p>
+            Currently working as an AI Content Creator for NAS Cleaning in Dubai, I create compelling social media
+            posts, blog articles, and promotional materials.
+          </p>
+          <p>
+            With expertise in technical writing, problem-solving, and research, I deliver deadline-driven content that
+            meets the highest standards of quality.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h4>5</h4>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-card">
+            <h4>3</h4>
+            <p>Active Roles</p>
+          </div>
+          <div class="stat-card">
+            <h4>100</h4>
+            <p>Projects Completed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title">My Portfolio</h2>
+      <p class="section-subtitle">Explore my creative work - posters and video content</p>
+
+      <!-- Filter Buttons -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="poster">Posters</button>
+        <button class="filter-btn" data-filter="video">Videos</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+
+        <!-- POSTERS / GRAPHICS - NAS Cleaning -->
+        <div class="gallery-item" data-category="poster">
+          <div class="gallery-image">
+            <img src="images/nas-cleaning-service-1.png" alt="NAS Cleaning Home Cleaning Service" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>NAS Cleaning Service</h3>
+                <p>Home Cleaning – Poster Design</p>
+                <button class="view-btn" data-type="image" data-src="images/nas-cleaning-service-1.png"
+                  onclick="openLightbox(this)">
+                  <i class="fas fa-eye"></i> View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="poster">
+          <div class="gallery-image">
+            <img src="images/nas-cleaning-service-2.png" alt="NAS Cleaning Service" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>NAS Cleaning Service</h3>
+                <p>Brand Poster Design</p>
+                <button class="view-btn" data-type="image" data-src="images/nas-cleaning-service-2.png"
+                  onclick="openLightbox(this)">
+                  <i class="fas fa-eye"></i> View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- POSTERS - Tesla -->
+        <div class="gallery-item" data-category="poster">
+          <div class="gallery-image">
+            <img src="images/tesla-poster-1.png" alt="Tesla Poster 1" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Tesla Campaign</h3>
+                <p>Poster Design – Vol. 1</p>
+                <button class="view-btn" data-type="image" data-src="images/tesla-poster-1.png"
+                  onclick="openLightbox(this)">
+                  <i class="fas fa-eye"></i> View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="poster">
+          <div class="gallery-image">
+            <img src="images/tesla-poster-2.png" alt="Tesla Poster 2" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Tesla Campaign</h3>
+                <p>Poster Design – Vol. 2</p>
+                <button class="view-btn" data-type="image" data-src="images/tesla-poster-2.png"
+                  onclick="openLightbox(this)">
+                  <i class="fas fa-eye"></i> View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="poster">
+          <div class="gallery-image">
+            <img src="images/tesla-poster-3.png" alt="Tesla Poster 3" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Tesla Campaign</h3>
+                <p>Poster Design – Vol. 3</p>
+                <button class="view-btn" data-type="image" data-src="images/tesla-poster-3.png"
+                  onclick="openLightbox(this)">
+                  <i class="fas fa-eye"></i> View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="poster">
+          <div class="gallery-image">
+            <img src="images/tesla-poster-4.png" alt="Tesla Poster 4" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Tesla Campaign</h3>
+                <p>Poster Design – Vol. 4</p>
+                <button class="view-btn" data-type="image" data-src="images/tesla-poster-4.png"
+                  onclick="openLightbox(this)">
+                  <i class="fas fa-eye"></i> View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEW NAS Cleaning Posters -->
+        <div class="gallery-item" data-category="poster">
+          <div class="gallery-image">
+            <img src="images/nas-cleaningg.png" alt="NAS Cleaning" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>NAS Cleaning</h3>
+                <p>Poster Design</p>
+                <button class="view-btn" data-type="image" data-src="images/nas-cleaningg.png"
+                  onclick="openLightbox(this)">
+                  <i class="fas fa-eye"></i> View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="poster">
+          <div class="gallery-image">
+            <img src="images/nas-cleaning-a.png" alt="NAS Cleaning A" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>NAS Cleaning</h3>
+                <p>Poster Design</p>
+                <button class="view-btn" data-type="image" data-src="images/nas-cleaning-a.png"
+                  onclick="openLightbox(this)">
+                  <i class="fas fa-eye"></i> View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="poster">
+          <div class="gallery-image">
+            <img src="images/nas-cleaning-d.png" alt="NAS Cleaning D" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>NAS Cleaning</h3>
+                <p>Poster Design</p>
+                <button class="view-btn" data-type="image" data-src="images/nas-cleaning-d.png"
+                  onclick="openLightbox(this)">
+                  <i class="fas fa-eye"></i> View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="poster">
+          <div class="gallery-image">
+            <img src="images/nas-cleaning-i.png" alt="NAS Cleaning I" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>NAS Cleaning</h3>
+                <p>Poster Design</p>
+                <button class="view-btn" data-type="image" data-src="images/nas-cleaning-i.png"
+                  onclick="openLightbox(this)">
+                  <i class="fas fa-eye"></i> View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="poster">
+          <div class="gallery-image">
+            <img src="images/nas-cleaning-j.png" alt="NAS Cleaning J" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>NAS Cleaning</h3>
+                <p>Poster Design</p>
+                <button class="view-btn" data-type="image" data-src="images/nas-cleaning-j.png"
+                  onclick="openLightbox(this)">
+                  <i class="fas fa-eye"></i> View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="poster">
+          <div class="gallery-image">
+            <img src="images/nas-cleaning-k.png" alt="NAS Cleaning K" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>NAS Cleaning</h3>
+                <p>Poster Design</p>
+                <button class="view-btn" data-type="image" data-src="images/nas-cleaning-k.png"
+                  onclick="openLightbox(this)">
+                  <i class="fas fa-eye"></i> View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIDEOS - NAS Cleaning -->
+        <div class="gallery-item" data-category="video">
+          <div class="gallery-image yt-embed">
+            <iframe src="https://www.youtube.com/embed/HSx8Rh-wX4Y?rel=0" title="NAS Cleaning Promo" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>NAS Cleaning Promo</h3>
+                <p>Brand Video</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="video">
+          <div class="gallery-image yt-embed">
+            <iframe src="https://www.youtube.com/embed/aDB1AQEgMCw?rel=0" title="NAS NanoCoating" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>NAS NanoCoating</h3>
+                <p>Product Promo Video</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="video">
+          <div class="gallery-image yt-embed">
+            <iframe src="https://www.youtube.com/embed/ukw6zCvVQfY?rel=0" title="NAS New Video" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>NAS New Video</h3>
+                <p>Short Reel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="video">
+          <div class="gallery-image yt-embed">
+            <iframe src="https://www.youtube.com/embed/FzCllrixhSY?rel=0" title="NAS Clean – Nuzhat" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>NAS Clean – Nuzhat</h3>
+                <p>Campaign Video</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="video">
+          <div class="gallery-image yt-embed">
+            <iframe src="https://www.youtube.com/embed/7yOjpbSUhSM?rel=0" title="New Video – 02" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>New Video – 02</h3>
+                <p>Promo Reel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content" id="lightbox-content"></div>
+  </div>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Tools</h2>
+      <p class="section-subtitle">Technologies and tools I work with</p>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-palette"></i> Design Tools</h3>
+          <div class="skill-items">
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Adobe Photoshop</span>
+            <span class="skill-tag">Adobe Illustrator</span>
+            <span class="skill-tag">Adobe Premiere Pro</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Technical Skills</h3>
+          <div class="skill-items">
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">AI/ML</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-bullhorn"></i> Marketing</h3>
+          <div class="skill-items">
+            <span class="skill-tag">Social Media Marketing</span>
+            <span class="skill-tag">Content Strategy</span>
+            <span class="skill-tag">SEO</span>
+            <span class="skill-tag">Email Marketing</span>
+            <span class="skill-tag">Analytics</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-pen-nib"></i> Content Creation</h3>
+          <div class="skill-items">
+            <span class="skill-tag">Copywriting</span>
+            <span class="skill-tag">Technical Writing</span>
+            <span class="skill-tag">Academic Writing</span>
+            <span class="skill-tag">Blog Writing</span>
+            <span class="skill-tag">Video Editing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Let's talk about everything!</p>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>Whether you need content creation or collaboration, I'm always open to new opportunities.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:your.email@example.com">your.email@example.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+880 XXX-XXXXXXX</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Motijheel, Dhaka, 1217</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Portfolio. All rights reserved.</p>
+      <p>Designed with <i class="fas fa-heart"></i> by You</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
